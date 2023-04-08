@@ -30,6 +30,29 @@
                         <p class="footer__contacts-list-value">{{settings.email}}</p>
                     </div>
                 </div>
+                <div class="footer__header">
+                    <h2 class="footer__header-title-requisites">реквизиты компании</h2>
+                </div>
+                <div class="footer__contacts">
+                    <div class="footer__contacts-list-requisites">
+                        <p class="footer__contacts-list-requisites-title">Полное наименование</p>
+                        <p class="footer__contacts-list-requisites-value">Общество с ограниченной ответственностью "Авеню 17"</p>
+                        <p class="footer__contacts-list-requisites-title">ИНН</p>
+                        <p class="footer__contacts-list-requisites-value">7726479033</p>
+                        <p class="footer__contacts-list-requisites-title">ОГРН</p>
+                        <p class="footer__contacts-list-requisites-value">1217700300410</p>
+                        <p class="footer__contacts-list-requisites-title">Адрес регистрации</p>
+                        <p class="footer__contacts-list-requisites-value">115191 г Москва пер Духовской, 17 / стр 18 этаж 4,5</p>
+                        <p class="footer__contacts-list-requisites-title">Расчетный счет</p>
+                        <p class="footer__contacts-list-requisites-value">40702810302720005509</p>
+                        <p class="footer__contacts-list-requisites-title">банк</p>
+                        <p class="footer__contacts-list-requisites-value">АО "АЛЬФА-БАНК"</p>
+                        <p class="footer__contacts-list-requisites-title">БИК</p>
+                        <p class="footer__contacts-list-requisites-value">044525593</p>
+                        <p class="footer__contacts-list-requisites-title">Корреспондентский счет</p>
+                        <p class="footer__contacts-list-requisites-value">30101810200000000593</p>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
@@ -86,6 +109,20 @@ export default {
                 @media (max-width: 991px){
                     font-size: 30px;
                     text-align: center;
+                }
+
+                &-requisites{
+                    font-size: 24px;
+                    margin-top: 30px;
+                    font-variation-settings: 'wght' 700;
+                    color: #fff;
+                    text-transform: uppercase;
+                    text-align: left;
+
+                    @media (max-width: 991px){
+                        font-size: 30px;
+                        text-align: center;
+                    }
                 }
             }
 
@@ -175,6 +212,43 @@ export default {
 
                     @media (max-width: 991px){
                         font-size: 12px;
+                    }
+                }
+
+                &-requisites{
+                    display: grid;
+                    grid-template-columns: 240px 1fr;
+                    gap: 12px;
+
+                    @media (max-width: 991px){
+                        grid-template-columns: 120px 1fr;
+                        margin-top: 0;
+                    }
+
+                    &-title{
+                        color: #fff;
+                        font-size: 14px;
+                        font-variation-settings: 'wght' 400;
+                        text-align: left;
+                        text-transform: uppercase;
+                        align-self: center;
+
+                        @media (max-width: 991px){
+                            font-size: 12px;
+                        }
+                    }
+
+                    &-value {
+                        align-self: center;
+                        color: #fff;
+                        font-size: 14px;
+                        font-variation-settings: 'wght' 500;
+                        text-align: left;
+                        text-transform: uppercase;
+
+                        @media (max-width: 991px) {
+                            font-size: 12px;
+                        }
                     }
                 }
             }

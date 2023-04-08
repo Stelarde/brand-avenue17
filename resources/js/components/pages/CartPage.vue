@@ -85,14 +85,13 @@
                         <div class="cart__order-form-group-radio-group">
                             <input type="radio" name="delivery" id="delivery1" value="Курьер" class="cart__order-form-group-radio-group-input" v-model="delivery">
                             <label for="delivery1" class="cart__order-form-group-radio-group-label">
-                                Курьер – Бесплатно (2-3 рабочих дня)
-                                Вы можете примерить покупки и купить только то, что подойдет
+                                Доставка от 10000р. бесплатно
                             </label>
                         </div>
                         <div class="cart__order-form-group-radio-group">
                             <input type="radio" name="delivery" id="delivery2" value="Самовывоз" class="cart__order-form-group-radio-group-input" v-model="delivery">
                             <label for="delivery2" class="cart__order-form-group-radio-group-label">
-                                Самовывоз из магазина — бесплатно (2-5 рабочих дней)
+                                Самовывоз из магазина
                             </label>
                         </div>
                     </div>
