@@ -40,10 +40,6 @@
                                                     <td>{{ $order->name }}</td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row">Фамилия:</th>
-                                                    <td>{{ $order->surname }}</td>
-                                                </tr>
-                                                <tr>
                                                     <th scope="row">Email:</th>
                                                     <td>{{ $order->email }}</td>
                                                 </tr>
