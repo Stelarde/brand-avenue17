@@ -20,6 +20,9 @@
                         <a :href="settings.telegram" target="_blank" class="footer__contacts-socials-item" v-if="settings.telegram">
                             <img src="/img/icons/tg-white.svg" alt="telegram" class="footer__contacts-socials-item-icon">
                         </a>
+                        <a href="/return" target="_blank" class="footer__contacts-socials-item-return">
+                            возврат
+                        </a>
                     </div>
                     <div class="footer__contacts-list">
                         <p class="footer__contacts-list-title">адрес магазина</p>
@@ -174,6 +177,24 @@ export default {
                     &-icon{
                         height: 30px;
                         width: 30px;
+                    }
+                    &-return{
+                        font-size: 20px;
+                        font-variation-settings: 'wght' 700;
+                        color: #fff;
+                        text-transform: uppercase;
+                        text-align: left;
+
+                        @media (max-width: 991px){
+                            font-size: 18px;
+                            text-align: center;
+                        }
+
+                        transition: opacity .3s ease;
+
+                        &:hover{
+                            opacity: .6;
+                        }
                     }
                 }
             }

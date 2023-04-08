@@ -32,6 +32,7 @@ Vue.component('home-page', require('./components/pages/HomePage.vue').default);
 Vue.component('catalog-page', require('./components/pages/CatalogPage.vue').default);
 Vue.component('product-page', require('./components/pages/ProductPage.vue').default);
 Vue.component('cart-page', require('./components/pages/CartPage.vue').default);
+Vue.component('return-page', require('./components/pages/ReturnPage.vue').default);
 
 // Blocks
 

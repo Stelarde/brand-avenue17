@@ -24,17 +24,10 @@ Route::get('/catalog/new', 'CatalogController@new')->name('catalog-new');
 Route::get('/catalog/{categorySlug?}', 'CatalogController@index')->name('catalog');
 Route::get('/product/{productSlug}', 'ProductController@index')->name('product');
 Route::get('/cart', 'CartController@index')->name('cart');
+Route::get('/return', 'ReturnController@index')->name('return');
 
 Route::get('/artisan', function (){
     Artisan::call('storage:link');
-});
-
-Route::get('/test', function() {
-    if (DB::connection()->getDatabaseName())  {
-        dd('Есть контакт!');
-    } else {
-        return 'Соединения нет';
-    }
 });
 
 // Admin
