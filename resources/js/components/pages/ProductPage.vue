@@ -27,6 +27,7 @@
             <div class="product__info">
                 <h1 class="product__info-title">{{ product.name }}</h1>
                 <p class="product__info-color" v-if="product.color">{{ product.color }}</p>
+                <p class="product__info-price-old" v-if="product.old_price">{{ product.old_price }} ₽</p>
                 <p class="product__info-price">{{ product.price }} ₽</p>
                 <div class="product__info-size">
                     <p class="product__info-size-text">Подберите свой точный размер</p>
@@ -286,6 +287,14 @@ export default {
                 margin-top: 24px;
                 margin-bottom: 8px;
                 font-variation-settings: 'wght' 700;
+
+                &-old{
+                    margin-top: 24px;
+                    margin-bottom: 0;
+                    font-variation-settings: 'wght' 700;
+                    text-decoration: line-through;
+                    color: gray;
+                }
             }
             &-size{
                 margin-bottom: 40px;

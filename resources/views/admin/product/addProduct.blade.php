@@ -54,6 +54,10 @@
                     <input type="text" name="price" class="form-control" id="productPrice" placeholder="Цена" required>
                 </div>
                 <div class="form-group mb-2">
+                    <label for="productOldPrice">Старая цена</label>
+                    <input type="text" name="old_price" class="form-control" id="productOldPrice" placeholder="Старая цена">
+                </div>
+                <div class="form-group mb-2">
                     <label for="productDesc">Описание товара</label>
                     <textarea class="form-control" name="desc" id="productDesc" rows="3" placeholder="Описание"></textarea>
                 </div>

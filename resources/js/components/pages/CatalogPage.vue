@@ -20,7 +20,10 @@
                             <h3 class="products__list-item-info-title-name">{{ product.name }}</h3>
                             <p class="products__list-item-info-title-color" v-if="product.color">{{ product.color }}</p>
                         </a>
-                        <p class="products__list-item-info-price">{{ product.price }}₽</p>
+                        <p class="products__list-item-info-price">
+                            <span class="products__list-item-info-price-old" v-if="product.old_price">{{ product.old_price }}₽ </span>
+                            {{ product.price }}₽
+                        </p>
                     </div>
                 </div>
             </div>
@@ -231,6 +234,19 @@ export default {
 
                         @media (max-width: 1199px){
                             font-size: 20px;
+                        }
+
+                        &-old{
+                            align-self: center;
+                            color: gray;
+                            text-decoration: line-through;
+                            text-align: right;
+                            font-size: 18px;
+                            font-variation-settings: 'wght' 300;
+
+                            @media (max-width: 1199px){
+                                font-size: 20px;
+                            }
                         }
                     }
                 }
