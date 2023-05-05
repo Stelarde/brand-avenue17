@@ -76,21 +76,6 @@
                         <label for="phone" class="cart__order-form-group-label">Телефон*</label>
                         <input type="text" id="phone" class="input cart__order-form-group-input" v-model="phone">
                     </div>
-                    <div class="cart__order-form-group-radio">
-                        <label for="delivery" class="cart__order-form-group-label">Способ доставки*</label>
-                        <div class="cart__order-form-group-radio-group">
-                            <input type="radio" name="delivery" id="delivery1" value="Курьер" class="cart__order-form-group-radio-group-input" v-model="delivery">
-                            <label for="delivery1" class="cart__order-form-group-radio-group-label">
-                                Доставка от 10000р. бесплатно
-                            </label>
-                        </div>
-                        <div class="cart__order-form-group-radio-group">
-                            <input type="radio" name="delivery" id="delivery2" value="Самовывоз" class="cart__order-form-group-radio-group-input" v-model="delivery">
-                            <label for="delivery2" class="cart__order-form-group-radio-group-label">
-                                Самовывоз из магазина
-                            </label>
-                        </div>
-                    </div>
                     <div class="cart__order-form-group">
                         <label for="street" class="cart__order-form-group-label">Улица*</label>
                         <input type="text" id="street" class="input cart__order-form-group-input" v-model="street">
@@ -107,29 +92,8 @@
                         <label for="comment" class="cart__order-form-group-label">Коментарий</label>
                         <textarea id="comment" class="input cart__order-form-group-input" v-model="comment"></textarea>
                     </div>
-                    <div class="cart__order-form-group-radio">
-                        <label for="payment" class="cart__order-form-group-label">Способ оплаты*</label>
-                        <div class="cart__order-form-group-radio-group">
-                            <input type="radio" name="payment" id="payment1" value="Банковской картой" class="cart__order-form-group-radio-group-input" v-model="payment">
-                            <label for="payment1" class="cart__order-form-group-radio-group-label">
-                                Банковской картой
-                            </label>
-                        </div>
-                        <div class="cart__order-form-group-radio-group">
-                            <input type="radio" name="payment" id="payment2" value="Наличными при получении" class="cart__order-form-group-radio-group-input" v-model="payment">
-                            <label for="payment2" class="cart__order-form-group-radio-group-label">
-                                Наличными при получении
-                            </label>
-                        </div>
-                    </div>
                 </div>
-                <div class="cart__order-submit" v-if="payment === 'Наличными при получении'">
-                    <button class="btn-black cart__order-submit-btn" @click="createOrder">Создать заказ</button>
-                    <p class="cart__order-submit-text">
-                        Нажимая на кнопку «создать заказ», Вы принимаете условия публичной оферты и политики конфиденциальности
-                    </p>
-                </div>
-                <div class="cart__order-submit" v-if="payment === 'Банковской картой'">
+                <div class="cart__order-submit">
                     <form name="TinkoffPayForm" @submit="createPay">
                         <button class="btn-black cart__order-submit-btn" type="submit">Оплатить заказ</button>
                     </form>
