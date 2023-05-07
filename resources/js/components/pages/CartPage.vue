@@ -73,6 +73,10 @@
                         <input type="text" id="name" class="input cart__order-form-group-input" v-model="name">
                     </div>
                     <div class="cart__order-form-group">
+                        <label for="last_name" class="cart__order-form-group-label">Фамилия*</label>
+                        <input type="text" id="last_name" class="input cart__order-form-group-input" v-model="last_name">
+                    </div>
+                    <div class="cart__order-form-group">
                         <label for="phone" class="cart__order-form-group-label">Телефон*</label>
                         <input type="text" id="phone" class="input cart__order-form-group-input" v-model="phone">
                     </div>
@@ -130,6 +134,7 @@ export default {
             delivery: "Курьер",
             email: "",
             name: "",
+            last_name: "",
             phone: "",
             street: "",
             home: "",
@@ -178,6 +183,7 @@ export default {
                     delivery: this.delivery,
                     email: this.email,
                     name: this.name,
+                    last_name: this.last_name,
                     phone: this.phone,
                     street: this.street,
                     home: this.home,
@@ -191,6 +197,7 @@ export default {
                     this.delivery = "Курьер"
                     this.email = ""
                     this.name = ""
+                    this.last_name = ""
                     this.phone = ""
                     this.street = ""
                     this.home = ""
@@ -217,6 +224,7 @@ export default {
                     delivery: this.delivery,
                     email: this.email,
                     name: this.name,
+                    last_name: this.last_name,
                     phone: this.phone,
                     street: this.street,
                     home: this.home,
@@ -245,6 +253,7 @@ export default {
                     this.delivery = "Курьер"
                     this.email = ""
                     this.name = ""
+                    this.last_name = ""
                     this.phone = ""
                     this.street = ""
                     this.home = ""

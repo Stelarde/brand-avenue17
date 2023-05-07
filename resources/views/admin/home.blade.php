@@ -43,6 +43,10 @@
                                                     <td>{{ $order->name }}</td>
                                                 </tr>
                                                 <tr>
+                                                    <th scope="row">Фамилия:</th>
+                                                    <td>{{ $order->last_name }}</td>
+                                                </tr>
+                                                <tr>
                                                     <th scope="row">Email:</th>
                                                     <td>{{ $order->email }}</td>
                                                 </tr>
