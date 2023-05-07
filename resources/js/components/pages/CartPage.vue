@@ -248,7 +248,11 @@ export default {
                     phone: this.phone,
                     email: this.email
                 })
-                .then((data) => window.open(data.data))
+                .then((data) => {
+                    setTimeout(() => {
+                        window.open(data.data);
+                    })
+                })
                 .then(() => {
                     this.delivery = "Курьер"
                     this.email = ""
